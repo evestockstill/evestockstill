@@ -26,6 +26,13 @@ const Header = () => {
             <span className='title'>Full Stack Developer</span>
           </div>
         </header>
+        <main>
+          <section className='section-main'>
+            <div className='center-text'>
+              <h3 className='section-title'>Projects</h3>
+            </div>
+          </section>
+        </main>
       </div>
     </>
   );
