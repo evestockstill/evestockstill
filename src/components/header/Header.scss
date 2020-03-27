@@ -120,12 +120,12 @@ font-style: normal;
 
 
 .section-title{
-  margin-top: 15rem;
-    font-size: 3.5rem;
+  margin-top: 17rem;
+    font-size: 5rem;
     text-transform: uppercase;
     display: inline-block;
     font-weight: 700;
-    background-image: linear-gradient(to right,  $black, $black-med, $black);
+    background-image: linear-gradient(to right,  $black, $black-med, $black, $black-med, $black);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -133,10 +133,10 @@ font-style: normal;
     transition: all 0.2s;
 
     @include respond(tab-port) {
-      font-size: 3rem;
+      margin-top: 20rem;
     }
     @include respond(phone) {
-      font-size: 2.5rem;
+      margin-top: 14rem;
     }
 
     &:hover {
