@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import mp4 from '../assets/glitter3.mov';
+import mp4 from '../assets/glitter.mp4';
 
 const Header = () => {
   return (
