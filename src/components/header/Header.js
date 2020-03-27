@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import mp4 from '../assets/glitter3.mov';
+import mov from '../assets/glitter3.mov';
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <header className='header'>
           <div className='bg-video'>
             <video className='bg-video__content' autoPlay muted loop>
-              <source src={mp4} type='video/mp4' alt='video' />
+              <source src={mov} type='video/mp4' alt='video' />
               your browser not supported
             </video>
           </div>
