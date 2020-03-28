@@ -1,19 +1,18 @@
 @import '../abstract/global.scss';
-// .navbar {
-   
-//     background: transparent
-// }
+
 .fa {
-  color: red;
+ color: $yellow1;
+ &:hover {
+  	box-shadow: -1px -1px 20px $whiteShadow, 1px -1px 20px $whiteShadow, -1px 1px 0 $whiteShadow, 1px 1px 0 $whiteShadow, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+ }
 }
-.coffee{
+
+#github, #linkedin, #resume{
+  height: 2rem;
+  width: 2rem;
  
-  color: $yellow1;
-//  clip-path: circle(50% at 50% 50%);
 }
-#github, #linkedin{
-  height: 4rem;
-  width: 4rem;
-  color: $yellow1;
-}
- 
+ .links {
+   color: red;
+   text-decoration: none;
+ }

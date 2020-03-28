@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <div className='background'>
         <header className='header'>
-        <Nav />
+          <Nav />
           <div className='bg-video'>
             <video className='bg-video__content' autoPlay muted loop>
               <source src={mp4} type='video/mp4' alt='video' />

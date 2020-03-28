@@ -9,34 +9,46 @@ import { NavLink } from 'react-router-dom';
 
 
 const Nav = () => {
+  const user = (
+    <FontAwesomeIcon
+      icon='user'
+      className='fa'
+      id='resume'
+      data='user'
+    ></FontAwesomeIcon>
+  );
+  const linkedIn = (
+    <a className='links' href='https://www.linkedin.com/in/evestockstill/'>LinkedIn
+      <FontAwesomeIcon
+        icon={['fab', 'linkedin']}
+        className='fa'
+        id='linkedin'
+      ></FontAwesomeIcon>
+    </a>
+  );
+  const github = (
+    <a className='links' href='https://www.github.com/evestockstill'>
+      Github
+      <FontAwesomeIcon
+        icon={['fab', 'github']}
+        className='fa'
+        id='github'
+      ></FontAwesomeIcon>
+    </a>
+  );
   return (
     <>
       <nav>
         <ul>
-          
-          <NavLink to='/resume' ><li>reume</li>
-           
-            {/* <a
-              className='links'
-              href='https://www.linkedin.com/in/evestockstill/'
-            >
-              LinkedIn
-              <FontAwesomeIcon
-                icon={['fab', 'linkedin']}
-                className='fa'
-                id='linkedin'
-              ></FontAwesomeIcon>
-            </a> */}
+          <NavLink to='/resume' className='links'>
+            <li>
+              Resume
+              {user}
+            </li>
           </NavLink>
+          <li>{linkedIn}</li>
           <li>
-            <a className='links' href='https://www.github.com/evestockstill'>
-              Github
-              <FontAwesomeIcon
-                icon={['fab', 'github']}
-                className='fa'
-                id='github'
-              ></FontAwesomeIcon>
-            </a>
+            {github}
           </li>
         </ul>
       </nav>
