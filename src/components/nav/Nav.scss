@@ -1,18 +1,56 @@
 @import '../abstract/global.scss';
+nav {
+display: flex;
+justify-content: flex-end;
+flex-direction: row;
+@include respond(phone) {
+  justify-content: center;
+}
 
+nav ul {
+  list-style-type: none;
+  border-top: .2rem solid $yellow1;
+  display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+li {
+  display: inline-block;
+  justify-content: f;
+}
 .fa {
  color: $yellow1;
+ margin-left: 1rem;
+ @include respond(phone) {
+     margin-left: .4rem;
+   }
  &:hover {
+  //  color: $grey-med;
   	box-shadow: -1px -1px 20px $whiteShadow, 1px -1px 20px $whiteShadow, -1px 1px 0 $whiteShadow, 1px 1px 0 $whiteShadow, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
  }
 }
 
 #github, #linkedin, #resume{
-  height: 2rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  @include respond(phone) {
+    height: 2rem;
   width: 2rem;
- 
+   }
 }
  .links {
-   color: red;
    text-decoration: none;
+   display: block;
+   text-align: center;
+   font-size: 1.6rem;
+   padding: .5rem 2rem;
+   color: $yellow1;
+   @include respond(phone) {
+     font-size: 1.2rem;
+     padding: .5rem;
+   }
+   &:hover {
+  	text-shadow: -1px -1px 10px $whiteShadow, 1px -1px 10px $whiteShadow, -1px 1px 0 $whiteShadow, 1px 1px 0 $whiteShadow, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
  }
+ }
+}

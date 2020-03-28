@@ -10,12 +10,15 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const user = (
-    <FontAwesomeIcon
-      icon='user'
-      className='fa'
-      id='resume'
-      data='user'
-    ></FontAwesomeIcon>
+    <NavLink to='/resume' className='links'>
+      Resume
+      <FontAwesomeIcon
+        icon='user'
+        className='fa'
+        id='resume'
+        data='user'
+      ></FontAwesomeIcon>
+    </NavLink>
   );
   const linkedIn = (
     <a className='links' href='https://www.linkedin.com/in/evestockstill/'>LinkedIn
@@ -40,12 +43,9 @@ const Nav = () => {
     <>
       <nav>
         <ul>
-          <NavLink to='/resume' className='links'>
-            <li>
-              Resume
-              {user}
-            </li>
-          </NavLink>
+          <li>
+            {user}
+          </li>
           <li>{linkedIn}</li>
           <li>
             {github}
