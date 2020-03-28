@@ -3,6 +3,7 @@ nav {
 display: flex;
 justify-content: flex-end;
 flex-direction: row;
+background-color: transparent;
 @include respond(phone) {
   justify-content: center;
 }
@@ -16,7 +17,12 @@ flex-direction: row;
 }
 li {
   display: inline-block;
-  justify-content: f;
+  
+  background: linear-gradient(to right, $black, $yellow2); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+ 
 }
 .fa {
  color: $yellow1;
@@ -33,6 +39,7 @@ li {
 #github, #linkedin, #resume{
   height: 2.4rem;
   width: 2.4rem;
+  
   @include respond(phone) {
     height: 2rem;
   width: 2rem;
@@ -43,11 +50,11 @@ li {
    display: block;
    text-align: center;
    font-size: 1.6rem;
-   padding: .5rem 2rem;
+   padding: 1.5rem 1rem 0 1rem;
    color: $yellow1;
    @include respond(phone) {
      font-size: 1.2rem;
-     padding: .5rem;
+     padding: 2.5rem .7rem 0 .7rem;
    }
    &:hover {
   	text-shadow: -1px -1px 10px $whiteShadow, 1px -1px 10px $whiteShadow, -1px 1px 0 $whiteShadow, 1px 1px 0 $whiteShadow, 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
