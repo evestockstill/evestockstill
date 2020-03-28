@@ -1,12 +1,15 @@
 import React from 'react';
 import './Header.scss';
 import mp4 from '../assets/glitter3.mov';
+import Nav from '../nav/Nav';
+import Resume from '../resume/Resume';
 
 const Header = () => {
   return (
     <>
       <div className='background'>
         <header className='header'>
+        <Nav />
           <div className='bg-video'>
             <video className='bg-video__content' autoPlay muted loop>
               <source src={mp4} type='video/mp4' alt='video' />

@@ -1,0 +1,16 @@
+@import '../abstract/global.scss';
+.signup {
+   
+  background: 
+    url("../assets/Resume.png");
+ background-repeat:no-repeat;
+ background-size: cover;
+ padding: 90rem 0;
+  background-position:center;
+  height: 100vh;
+  @include respond(phone) {
+     background-size: contain; 
+     padding: 1rem;
+  }
+ 
+}

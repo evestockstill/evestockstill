@@ -1,6 +1,23 @@
 import React from 'react';
-import Header from './header/Header';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import  Resume  from '../components/resume/Resume';
+import  Header from '../components/header/Header';
+
+library.add(fab, faCheckSquare, faCoffee);
 
 export default function App() {
-  return <Header />;
+  return (
+    <>
+      <Router>
+       
+        <Route exact path='/' component={Header} />
+        <Route path='/resume' component={Resume} />
+            
+       
+      </Router>
+    </>
+  );
 }
