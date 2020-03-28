@@ -1,0 +1,37 @@
+@import '../abstract/global.scss';
+
+.section-main{
+//    background: linear-gradient(to right, $yellow1, $yellow2); 
+    height: auto;
+    padding-bottom: 4rem;
+  color: $darkgrey;
+  font-size: 4rem;
+  text-align: center;
+
+
+.section-title{
+  margin-top: 5rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    background-image: linear-gradient(to right,  $yellow1, $yellow2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      // margin-top: 3rem;
+    }
+    @include respond(phone) {
+      margin-top: 4rem;
+    }
+
+    &:hover {
+      transform: skewY(3deg) skewX(15deg) scaleX(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+    }
+  }
+}
