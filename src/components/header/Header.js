@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 import mp4 from '../assets/glitter3.mov';
 import Nav from '../nav/Nav';
-import Resume from '../resume/Resume';
+// import Project from '../project/Project';
 
 const Header = () => {
   return (
@@ -30,14 +30,9 @@ const Header = () => {
               <span className='title'>Full Stack Developer</span>
             </div>
           </header>
-          <main>
-            <section className='section-main'>
-              <div className='center-text'>
-                <h3 className='section-title'>Projects</h3>
-                
-              </div>
-            </section>
-          </main>
+          {/* <div>
+            <Project />
+          </div> */}
         </div>
       </div>
     </>
