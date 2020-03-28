@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.scss';
-import mp4 from '../assets/glitter3.mov';
 import Nav from '../nav/Nav';
-// import Project from '../project/Project';
+import mp4 from '../assets/glitter.mp4';
+
 
 const Header = () => {
   return (
@@ -30,9 +30,6 @@ const Header = () => {
               <span className='title'>Full Stack Developer</span>
             </div>
           </header>
-          {/* <div>
-            <Project />
-          </div> */}
         </div>
       </div>
     </>
