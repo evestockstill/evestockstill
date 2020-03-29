@@ -16,13 +16,7 @@ export default function App() {
       <Router>
         <Route exact path='/' component={MainPage} />
         <Route path='/resume' component={Resume} />
-        {/* <Route
-          path='/linkedin/evestockstill'
-          component={() => {
-            window.location.href = 'https://www.linkedin.com/in/evestockstill/';
-            return null;
-          }}
-        /> */}
+       
       </Router>
     </>
   );
