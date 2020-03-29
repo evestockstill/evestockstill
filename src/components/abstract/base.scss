@@ -24,8 +24,11 @@ letter-spacing: .1rem;
 body {
   box-sizing: border-box;
   background: black;
-  color:$grey-med;
-  padding: 1rem; }
+  color:$yellow1;
+//  background: radial-gradient($blue2, $blue);
+ background: radial-gradient( $orange3, $orange2, $orange1);
+  padding: 1rem; 
+}
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }

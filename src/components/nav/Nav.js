@@ -4,10 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 // import Resume from '../resume/Resume';
 
-
-
-
-
 const Nav = () => {
   const user = (
     <NavLink to='/resume' className='links'>
@@ -21,6 +17,15 @@ const Nav = () => {
     </NavLink>
   );
   const linkedIn = (
+    // <NavLink to='/linkedin/evestockstill' className='links'>
+    //   LinkedIn
+    //   <FontAwesomeIcon
+    //     icon={['fab', 'linkedin']}
+    //     className='fa'
+    //     id='linkedin'
+    //   ></FontAwesomeIcon>
+    // </NavLink>
+
     <a
       target='_self'
       href='https://www.linkedin.com/in/evestockstill/'
@@ -52,13 +57,9 @@ const Nav = () => {
     <>
       <nav>
         <ul>
-          <li>
-            {user}
-          </li>
+          <li>{user}</li>
           <li>{linkedIn}</li>
-          <li>
-            {github}
-          </li>
+          <li>{github}</li>
         </ul>
       </nav>
     </>

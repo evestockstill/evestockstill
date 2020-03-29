@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <>
       <div className='wrapper'>
-        <div className='signup'> 
+        <div className='resume'> 
        
         </div>
       </div>

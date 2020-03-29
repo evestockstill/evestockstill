@@ -15,16 +15,14 @@
 
   .bg-video {
     display: none;
-    filter: contrast(2);
+    // filter: contrast(2);
+    filter: grayscale(1);
     top: 0;
     left: 0;
     height: 100%;
     width: auto;
     z-index: -1;
     background-blend-mode: screen;
- 
-
-    // clip-path: circle(44.5% at 50% 50%);
     @include respond(phone) {
       display: none;
     }
@@ -48,6 +46,8 @@
     @include respond(phone) {
       padding-top: 5%;
       font-size: 5.5rem;
+      color: black;
+
     }
      @include respond(tab-port) {
     }
@@ -63,10 +63,11 @@
     text-align: center;
     @include respond(phone) {
       font-size: 2.6rem;
+      color: black;
     }
      @include respond(tab-port) {
       top: 20%;
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
      @include respond(tab-port-big) {
    top: 27%;
@@ -79,6 +80,8 @@
     @include respond(phone) {
       top: 13%;
       font-size: 5.5rem;
+      color: black;
+
 
     }
     @include respond(tab-port) {
@@ -101,7 +104,7 @@
       animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
       letter-spacing: 0.2rem;
       @include respond(phone) {
-        color: $yellow1;
+        color: $black;
       }
     }
   }
