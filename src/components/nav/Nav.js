@@ -21,7 +21,12 @@ const Nav = () => {
     </NavLink>
   );
   const linkedIn = (
-    <a className='links' href='https://www.linkedin.com/in/evestockstill/'>LinkedIn
+    <a
+      target='_self'
+      href='https://www.linkedin.com/in/evestockstill/'
+      className='links'
+    >
+      LinkedIn
       <FontAwesomeIcon
         icon={['fab', 'linkedin']}
         className='fa'
@@ -30,7 +35,11 @@ const Nav = () => {
     </a>
   );
   const github = (
-    <a className='links' href='https://www.github.com/evestockstill'>
+    <a
+      target='_self'
+      href='https://www.github.com/evestockstill'
+      className='links'
+    >
       Github
       <FontAwesomeIcon
         icon={['fab', 'github']}

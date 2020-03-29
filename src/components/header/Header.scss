@@ -1,14 +1,15 @@
 @import "../abstract/global.scss";
-.wrapper {
-  width: auto;
-  max-width: auto;
-  padding: 0 0.1rem;
-  margin: 0;
-  overflow: hidden;
-}
+
 .header {
-  height: 80vh;
+  height: 45vh;
+   border-bottom: .5rem solid $yellow1;
   @include respond(phone) {
+    height: 30vh;
+  }
+  @include respond(tab-port) {
+    height: 35vh;
+  }
+  @include respond(tab-port-big) {
     height: 40vh;
   }
 
@@ -21,9 +22,17 @@
     width: auto;
     z-index: -1;
     background-blend-mode: screen;
-    clip-path: circle(44.5% at 50% 50%);
+ 
+
+    // clip-path: circle(44.5% at 50% 50%);
     @include respond(phone) {
       display: none;
+    }
+    @include respond(tab-port) {
+      height: 30vh;
+    }
+    @include respond(tab-port-big) {
+      height: 40vh;
     }
     &__content {
       width: 100%;
@@ -32,32 +41,52 @@
     }
   }
   .first {
-    @include text-color(6.3rem);
-    margin-top: 7rem;
+    @include text-color(7.3rem);
+    padding: .5rem;
     top: 20%;
     left: 50%;
     @include respond(phone) {
-      top: 7%;
+      padding-top: 5%;
+      font-size: 5.5rem;
     }
+     @include respond(tab-port) {
+    }
+    @include respond(tab-port-big) {
+ top: 18%;
+  }
   }
   .title {
-    @include text-color(2.8rem);
+    @include text-color(3.8rem);
     margin-top: 5rem;
-    top: 40%;
+    top: 33%;
     left: 50%;
+    text-align: center;
     @include respond(phone) {
-      top: 25%;
       font-size: 2.6rem;
     }
+     @include respond(tab-port) {
+      top: 20%;
+      font-size: 3rem;
+    }
+     @include respond(tab-port-big) {
+   top: 27%;
+  }
   }
   .text {
-    @include text-color(6.3rem);
-    margin-top: 6rem;
+    @include text-color(7.3rem);
     top: 30%;
     left: 50%;
     @include respond(phone) {
-      top: 15%;
+      top: 13%;
+      font-size: 5.5rem;
+
     }
+    @include respond(tab-port) {
+      top: 20%;
+    }
+     @include respond(tab-port-big) {
+  top: 25%;
+  }
     &:before {
       content: attr(data);
       position: absolute;

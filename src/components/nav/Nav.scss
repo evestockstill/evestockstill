@@ -3,6 +3,8 @@ nav {
 display: flex;
 justify-content: flex-end;
 flex-direction: row;
+  border-top: .5rem solid $yellow1;
+
 background-color: transparent;
 @include respond(phone) {
   justify-content: center;
@@ -10,14 +12,13 @@ background-color: transparent;
 
 nav ul {
   list-style-type: none;
-  border-top: .2rem solid $yellow1;
+  border-top: 1rem solid $yellow1;
   display: flex;
 justify-content: space-between;
 flex-direction: row;
 }
 li {
   display: inline-block;
-  
   background: linear-gradient(to right, $black, $yellow2); 
     -webkit-background-clip: text;
     background-clip: text;
