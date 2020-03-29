@@ -1,3 +1,4 @@
+@import './variables.scss';
 @mixin clearfix {
   &::after {
     content: "";
@@ -39,4 +40,26 @@
   @if $breakpoint ==  small-lap {
     @media(min-width: 70em) { @content }; //1800 +
   }
+}
+$font: quiche-sans,sans-serif;
+$font-weight: 700;
+$transform: translate(-50%, -50%);
+$absolute: absolute;
+$background: linear-gradient(to right, $yellow1, $yellow2); 
+$webclip: text;
+$clip:  text;
+$height: 1;
+$color: transparent;
+
+@mixin text-color ($size){
+  font-family: $font;
+  font-size: $size;
+  font-weight: $font-weight;
+  transform: $transform;
+  position: $absolute;
+  background: $background;
+   background-clip: $clip;
+   -webkit-background-clip: text;
+   color: $color;
+   line-height: $height;
 }

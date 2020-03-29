@@ -1,35 +1,29 @@
-@import '../abstract/global.scss';
+@import "../abstract/global.scss";
 .wrapper {
   width: auto;
   max-width: auto;
-  padding: 0 .1rem;
+  padding: 0 0.1rem;
   margin: 0;
   overflow: hidden;
 }
 .header {
   height: 80vh;
-   @include respond(phone) {
-      height: 40vh;
-    }
-   
+  @include respond(phone) {
+    height: 40vh;
+  }
+
   .bg-video {
     display: none;
-    // filter: hue-rotate(10deg);
     filter: contrast(2);
-    // filter: grayscale(30%);
     top: 0;
     left: 0;
     height: 100%;
     width: auto;
     z-index: -1;
     background-blend-mode: screen;
-    // clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
-    clip-path: circle(50% at 50% 50%);
-
-     @include respond(phone) {
-       display: none;
-    
-      
+    clip-path: circle(44.5% at 50% 50%);
+    @include respond(phone) {
+      display: none;
     }
     &__content {
       width: 100%;
@@ -37,94 +31,49 @@
       object-fit: cover;
     }
   }
-
-
-.first {
-    font-size: 6.3rem;
-  font-family: quiche-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
- text-align: center;
- line-height: 1;
- margin: 0;
-  margin-top: 7rem;
- top: 20%;
- left: 50%;
- transform: translate(-50%, -50%);
- position: absolute;
-  background: linear-gradient(to right, $yellow1, $yellow2); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  .first {
+    @include text-color(6.3rem);
+    margin-top: 7rem;
+    top: 20%;
+    left: 50%;
     @include respond(phone) {
       top: 7%;
-
     }
- 
-}
-.title {
-    font-size: 2.8rem;
-     font-family: quiche-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
- text-align: center;
- line-height: 1;
- margin: 0;
-  margin-top: 5rem;
- top: 40%;
- left: 50%;
- transform: translate(-50%, -50%);
- position: absolute;
-     background: linear-gradient(to right, $yellow1, $yellow2); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  }
+  .title {
+    @include text-color(2.8rem);
+    margin-top: 5rem;
+    top: 40%;
+    left: 50%;
     @include respond(phone) {
       top: 25%;
       font-size: 2.6rem;
     }
-}
-.text {
- font-size: 6.3rem;
- font-family: quiche-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
- text-align: center;
- line-height: 1;
-//  margin: 0;
+  }
+  .text {
+    @include text-color(6.3rem);
     margin-top: 6rem;
-
- top: 30%;
- left: 50%;
- transform: translate(-50%, -50%);
- position: absolute;
- 
-  background: linear-gradient(to right, $yellow1, $yellow2); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    top: 30%;
+    left: 50%;
     @include respond(phone) {
       top: 15%;
-      
     }
-    
-     &:before {
-		content: attr(data);
-		position: absolute;
-		overflow: hidden;
-		color: $grey-med;
-		width: auto;
-		z-index: 5;
-		text-shadow: none;
-        left: 80.5%;
-        bottom: 55%;
-        text-align: left;
-        animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
-        letter-spacing: .2rem;
-        @include respond(phone) {
-          color: $yellow1;
-        }
-	}
+    &:before {
+      content: attr(data);
+      position: absolute;
+      overflow: hidden;
+      color: $grey-med;
+      width: auto;
+      z-index: 5;
+      text-shadow: none;
+      left: 80.5%;
+      bottom: 55%;
+      text-align: left;
+      animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
+      letter-spacing: 0.2rem;
+      @include respond(phone) {
+        color: $yellow1;
+      }
+    }
+  }
 }
-}
-
