@@ -70,3 +70,8 @@
 		text-shadow: none;
 	}
 }
+@keyframes move {
+  20%, 100% {
+    transform: translateY(-40rem, 0);
+  }
+}

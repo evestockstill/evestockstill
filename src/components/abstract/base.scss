@@ -7,7 +7,7 @@
   box-sizing: inherit;
 }html {
  font-family: quiche-sans,sans-serif;
-font-weight: 400;
+font-weight: 600;
 font-style: normal;
 letter-spacing: .1rem;
   font-size: 62.5%; }
@@ -23,9 +23,12 @@ letter-spacing: .1rem;
 
 body {
   box-sizing: border-box;
+  color: black;
   background: black;
-  color:$grey-med;
-  padding: 1rem; }
+//  background: radial-gradient($blue2, $blue);
+//  background: radial-gradient( $orange3, $orange2, $orange1);
+  padding: 1rem; 
+}
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
