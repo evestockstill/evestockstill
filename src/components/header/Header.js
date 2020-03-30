@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss';
 import mp4 from '../assets/glitter.mp4';
 import Nav from '../nav/Nav';
+
 const Header = () => {
   return (
     <>
