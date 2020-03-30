@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import  Resume  from '../components/resume/Resume';
 // import  Header from '../components/header/Header';
 import MainPage from '../components/mainPage/MainPage';
 // import Nav from '../components/nav/Nav';
 
-library.add(fab, faUser, faCoffee);
+library.add(fab, faUser, faAngleDown);
 
 export default function App() {
   return (

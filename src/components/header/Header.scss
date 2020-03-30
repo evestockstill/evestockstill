@@ -104,7 +104,7 @@
       animation: moveInLeft 1s ease-out, flicker 2.2s linear infinite;
       letter-spacing: 0.2rem;
       @include respond(phone) {
-        color: $black;
+        color: $orange1;
       }
     }
   }

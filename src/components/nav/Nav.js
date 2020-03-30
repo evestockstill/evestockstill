@@ -12,20 +12,10 @@ const Nav = () => {
         icon='user'
         className='fa'
         id='resume'
-        data='user'
       ></FontAwesomeIcon>
     </NavLink>
   );
   const linkedIn = (
-    // <NavLink to='/linkedin/evestockstill' className='links'>
-    //   LinkedIn
-    //   <FontAwesomeIcon
-    //     icon={['fab', 'linkedin']}
-    //     className='fa'
-    //     id='linkedin'
-    //   ></FontAwesomeIcon>
-    // </NavLink>
-
     <a
       target='_self'
       href='https://www.linkedin.com/in/evestockstill/'

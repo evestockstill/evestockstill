@@ -1,14 +1,7 @@
-$primary: rgb(23, 131, 134);
-$primary2: rgb(17, 102, 105);
-$primary-light:rgb(45,130,106);
-$primary-light2: rgb(45,130,106);
-$primary-grey: #777;
 $primary-white: #fff;
 $black: rgb(8, 7, 7);
-$black-med: rgba(0, 0, 0, 0.418);
-$red: rgba(202, 49, 43, 0.746);
+$black-med: rgba(0, 0, 0, 0.6);
 $black-clear: rgba(240, 235, 235, 0.276);
-$grey-light-1: #f7f7f7;
 $grey-med: #eee;
 $darkgrey: #999;
 $darkgrey-2: #333;
@@ -20,6 +13,7 @@ $yellow: #d84603; //orange bright
 $yellow1: #F56204; //orange
 $yellow2: #F56204;
 $peach: rgb(238, 205, 175);
+$border: #e6af2e;
 
 // $yellow1: #c94837; //pink orange
 // $yellow2: #c94837;
@@ -27,6 +21,7 @@ $peach: rgb(238, 205, 175);
 // $yellow2: #b37c18d7; //mustard yellow
 $yellow3: #423419d7;
 $whiteShadow: rgba(#fff, .4);
+$whiteShadow1: rgba(206,206,206, .7);
 $shadow: rgba($yellow, .5);
 $h1:  rgba(45,45,45,1);
 
@@ -37,6 +32,7 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 // #9A562E #244440
 $orange1: #F56204; //darker orange
+$orange11: rgba(245, 96, 4, 0.61); //darker orange
 $peach1: rgb(238, 148, 92); //darker orange
 $orange2: rgb(245, 108, 5); //dark med orange
 $orange3:rgb(233, 142, 85);// med dark orange
