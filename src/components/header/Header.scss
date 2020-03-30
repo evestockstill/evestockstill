@@ -14,8 +14,7 @@
   }
 
   .bg-video {
-    display: none;
-    // filter: contrast(2);
+    // display: none;
     filter: grayscale(1);
     top: 0;
     left: 0;
@@ -46,7 +45,7 @@
     @include respond(phone) {
       padding-top: 5%;
       font-size: 5.5rem;
-      color: black;
+      // color: black;
 
     }
      @include respond(tab-port) {
@@ -63,7 +62,7 @@
     text-align: center;
     @include respond(phone) {
       font-size: 2.6rem;
-      color: black;
+      // color: black;
     }
      @include respond(tab-port) {
       top: 20%;
@@ -80,7 +79,7 @@
     @include respond(phone) {
       top: 13%;
       font-size: 5.5rem;
-      color: black;
+      // color: black;
 
 
     }
